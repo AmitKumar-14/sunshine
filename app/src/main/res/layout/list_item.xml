@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="0.5dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        >
+
+        <ImageView
+            android:id="@+id/LVIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/LVDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="date"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/LVIcon"/>
+        <TextView
+            android:id="@+id/LVconditionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="condition"
+            android:layout_below="@id/LVDate"
+            android:layout_toRightOf="@id/LVIcon"
+               android:background="@android:color/transparent"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/LVMaxtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max"
+            android:background="@android:color/transparent"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/LVMintemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:layout_below="@id/LVDate"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

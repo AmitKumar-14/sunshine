@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardElevation="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#918C8C">
+        <TextView
+            android:id="@+id/fdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ficon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdate"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/fconditionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="condtiontext"
+            android:layout_margin="3dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@id/ficon"/>
+        <TextView
+            android:id="@+id/fTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="temp"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fconditionText"/>
+        <TextView
+            android:id="@+id/fwind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="windSpeed"
+            android:layout_margin="3dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fTemp"/>
+        <TextView
+            android:id="@+id/fhumdity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity"
+            android:textSize="20dp"
+            android:layout_below="@+id/fwind"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_margin="3dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
